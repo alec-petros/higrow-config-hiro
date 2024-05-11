@@ -40,7 +40,7 @@ esphome:
       - switch.turn_off: spower
 
 dashboard_import:
-  package_import_url: github://bruvv/LILYGO-T-Higrow-Esphome/LILYGO-T-Higrow-ESP32.yaml@main
+  package_import_url: github://alec-petros/higrow-config-hiro/LILYGO-T-Higrow-ESP32.yaml@hiroyuki-two-battery-fix
 
 esp32:
   board: lolin_d32
@@ -103,7 +103,7 @@ switch:
 sensor:
   # Wifi sensor
   - platform: wifi_signal
-    name: '${devicename} WiFi Signal'
+    name: '${devicename} WiFi Signal Test'
     id: '${devicename}_wifi_signal'
     update_interval: ${update_interval}
 
