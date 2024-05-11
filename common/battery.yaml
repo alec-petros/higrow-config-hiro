@@ -2,7 +2,9 @@
 sensor:
   # Batterie volt
   - platform: adc
-    pin: 33
+    pin:
+      number: 33
+      allow_other_uses: true
     name: '${devicename} Battery Voltage'
     id: '${devicename}_voltage'
     attenuation: 11db
@@ -21,7 +23,9 @@ sensor:
 
   # Battery %
   - platform: adc
-    pin: 33
+    pin:
+      number: 33
+      allow_other_uses: true
     name: '${devicename} Battery'
     id: '${devicename}_percent'
     attenuation: 11db
